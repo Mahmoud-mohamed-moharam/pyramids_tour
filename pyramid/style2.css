@@ -1,0 +1,154 @@
+/* 
+colors 
+light green #7eb56f
+#55c57a
+#28b485
+*/
+*::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+button {
+  font-family: "Poppins", sans-serif;
+}
+.header {
+  width: 95%;
+  margin: auto;
+  background: linear-gradient(to right bottom, #7ed56fd8, #28b485d8),
+    url(pyramid.jpg);
+  height: 95vh;
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 0% 100%);
+}
+.head {
+  width: 90%;
+  height: 10%;
+  align-items: center;
+  display: flex;
+  justify-items: center;
+  position: absolute;
+  top: 0;
+}
+.logo,
+.nav-links,
+.cart {
+  display: flex;
+}
+.logo {
+  flex: 1;
+}
+nav {
+  flex: 2;
+}
+.nav-links {
+  justify-content: space-around;
+  list-style: none;
+}
+
+.cart {
+  flex: 1;
+  justify-content: flex-end;
+}
+.nav-link {
+  text-decoration: none;
+  color: #777;
+}
+.logo img:hover,
+.cart img:hover {
+  opacity: 0.7;
+}
+.logo h3:hover,
+.nav-link:hover {
+  color: #c36cbb;
+}
+.introduction {
+  height: 30%;
+  width: 40%;
+  flex-direction: column;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.intro-text {
+  height: 70%;
+
+  text-transform: uppercase;
+  animation: drop 1.5s ease 0.5s;
+  animation-fill-mode: backwards;
+}
+.intro-text h1 {
+  padding-left: 7px;
+  color: #fff;
+  letter-spacing: 28px;
+  font-weight: bolder;
+  font-size: 44px;
+}
+.intro-text h2 {
+  color: #ffe;
+  letter-spacing: 5.5px;
+  font-size: 30px;
+}
+.intro-text h1::selection,
+.intro-text h2::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+.introduction button {
+  position: relative;
+  top: 80%;
+  right: 5%;
+  /*transform: translate(0%, 70%);*/
+  border: 1px solid #fff;
+  height: 50px;
+  width: 200px;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 18px;
+  color: rgb(73, 72, 72);
+  background-color: #fff;
+  animation: up 1.5s ease 0.5s;
+  animation-fill-mode: backwards;
+  backface-visibility: hidden;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.introduction button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+.introduction button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+    transform: translatey(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translatey(0);
+  }
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translatey(-200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0px);
+  }
+}
