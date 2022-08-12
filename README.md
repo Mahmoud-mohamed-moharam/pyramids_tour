@@ -21,4 +21,4 @@ just a landing page for my new website
   * list1.1
   
 [youtube](https://www.youtube.com "Youtube")
-:tent::tent::tent::shark::pear::shark:
+:tent::tent::tent:
